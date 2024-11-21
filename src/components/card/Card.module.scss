@@ -1,0 +1,169 @@
+@import 'styles/common';
+
+.container {
+  @extend .flexColStart;
+  gap: 1rem;
+  background: transparent;
+  width: 468px;
+  height: 768px;
+  background: transparent;
+
+  img {
+    border-radius: 16px;
+    background-color: $veryLightGray;
+    filter: contrast(130%);
+  }
+}
+.grid-container{
+  
+}
+
+.title {
+  font-family: 'Sora', sans-serif;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 25px;
+  letter-spacing: 0.2px;
+  color: $darkNavyBlue;
+  width: 100%;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+}
+
+.content {
+  @extend .spaceBetween;
+  flex-direction: column;
+  gap: 0.5rem;
+  width: 100%;
+}
+
+.mini {
+  gap: 0.25rem;
+
+  & > img {
+    border-radius: 0;
+  }
+
+  .title {
+    font-size: 0.85rem;
+  }
+
+  .time > span {
+    display: none;
+  }
+
+  .peoples span {
+    display: none;
+  }
+
+  .badge {
+    max-width: 88px;
+  }
+}
+
+.timeBox {
+  @extend .spaceBetween;
+  gap: 1rem;
+  width: 100%;
+}
+
+.time {
+  @extend .flexCenter;
+  gap: 1rem;
+  font-family: 'Inter', sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 150%;
+  color: $secondaryGray;
+}
+
+.divider {
+  width: 100%;
+  border-bottom: 1px solid $veryLightGray;
+}
+
+.bidding {
+  @extend .spaceBetween;
+  gap: 1rem;
+  width: 100%;
+}
+
+.peoples {
+  @extend .spaceBetween;
+
+  img {
+    cursor: pointer;
+
+    &:hover {
+      opacity: 0.75;
+    }
+  }
+
+  span {
+    margin-left: 1rem;
+    font-family: 'Inter', sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 150%;
+    color: $secondaryGray;
+  }
+}
+
+.iconBtn {
+  @extend .clearStyles, .flexCenter;
+  max-width: 28px;
+  height: 34px;
+  padding: 0 0.25rem;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: scale 0.15s ease-in-out;
+
+  &:hover {
+    background-color: transparentize($lightRedBoxShadowHover, 0.35);
+    scale: 1.05;
+
+    svg path {
+      stroke: $red;
+    }
+  }
+}
+
+.tile {
+  @extend .mini;
+  flex-direction: row !important;
+  gap: 1rem !important;
+  width: 100% !important;
+  height: unset;
+  padding: 1rem;
+  margin: 0;
+  border: unset !important;
+
+  img {
+    width: 30%;
+    height: 100%;
+    border-radius: 12px;
+  }
+
+  .content {
+    width: 70%;
+  }
+}
+
+.dark {
+  .title {
+    color: $white;
+  }
+
+  .time svg path {
+    fill: $secondaryGray;
+  }
+
+  .divider {
+    border-color: $secondaryGray;
+  }
+
+  .iconBtn:hover {
+    background-color: $tHalfWhite;
+  }
+}

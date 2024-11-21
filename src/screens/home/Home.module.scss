@@ -1,0 +1,13 @@
+@import 'styles/common';
+
+.wrapper {
+  @extend .flexColStart;
+  width: 100%;
+  min-height: 100vh;
+  padding-top: 78px;
+  transition: background-color 0.15s ease-in-out;
+}
+
+.dark {
+  background-color: $darkBg;
+}

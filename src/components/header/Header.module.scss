@@ -1,0 +1,132 @@
+@import 'styles/common';
+
+.header {
+  @extend .spaceBetween;
+  gap: 1rem;
+  width: 100%;
+  height: 78px;
+  padding: 1rem 2rem;
+  background-color: transparent;
+  backdrop-filter: blur(24px);
+  position: fixed;
+  top: 0;
+  z-index: 1;
+
+  .logo,
+  .navLinks,
+  .navBtns {
+    @extend .flexCenter;
+    gap: 1rem;
+  }
+
+  @media (max-width: 996px) {
+    .hamburger {
+      display: flex;
+    }
+
+    .navLinks {
+      display: none;
+    }
+  }
+
+  @media (max-width: 645px) {
+    padding: 1rem;
+
+    .navBtns button:not(:last-of-type) {
+      display: none;
+    }
+  }
+}
+
+.logo {
+  cursor: pointer;
+
+  &:hover {
+    scale: 1.01;
+
+    svg {
+      filter: drop-shadow(0 0 18px $primaryBlue);
+    }
+  }
+}
+
+.iconBtn {
+  background: none;
+  box-shadow: none;
+  width: 40px;
+  height: 40px;
+  padding: 0;
+
+  &:hover {
+    background-color: $veryLightGray;
+
+    svg path {
+      fill: $primaryBlue;
+    }
+  }
+}
+
+.hamburger {
+  cursor: pointer;
+  display: none;
+}
+
+.modal {
+  background-color: $black50;
+}
+
+.mobileNav {
+  height: 100%;
+  padding: 2rem;
+
+  &,
+  .logo,
+  .navLinks,
+  .navBtns {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-end;
+    gap: 1rem;
+  }
+}
+
+.navLinksMob {
+  @extend .flexColEnd;
+  gap: 0.5rem;
+
+  a {
+    color: $white;
+    padding: 0.25rem 0;
+    text-align: right;
+  }
+}
+
+.navBtnsMob {
+  @extend .flexColEnd;
+  gap: 0.75rem;
+  display: none !important;
+
+  button {
+    color: $white;
+    border-color: $white;
+  }
+
+  @media (max-width: 645px) {
+    display: flex !important;
+  }
+}
+
+.dark {
+  .iconBtn:hover {
+    background-color: $secondaryGray;
+
+    svg path {
+      fill: $white;
+    }
+  }
+
+  .logo:hover svg {
+    filter: drop-shadow(0 0 18px $secondaryGray);
+  }
+}
