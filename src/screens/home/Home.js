@@ -66,7 +66,7 @@ const Home = () => {
       {/* <Slider /> */}
       {/* <Countbox /> */}
       <CTA />
-      <div
+      {/* <div
         style={{
           display: "grid",
           gridTemplateColumns: "repeat(4, minmax(0, 1fr))",
@@ -104,7 +104,7 @@ const Home = () => {
             </div>
           );
         })}
-      </div>
+      </div> */}
       <EthRow />
       <Footer />
     </div>
