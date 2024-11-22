@@ -37,6 +37,7 @@ const CTA = ({ customClass }) => {
         src={`/assets/png/users${isDark ? "-dark" : ""}.png`}
         customClass={stl.featureBox}
       />
+    
     </motion.div>
   );
 };

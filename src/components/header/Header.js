@@ -28,7 +28,7 @@ const Header = ({ customClass }) => {
 
   const motionProps = getCommonMotionProps(animation, setAnimation)
 
-  const navLinks = ['Home', 'Roadmap', 'Discover', 'Community']
+  const navLinks = ['Home', 'Discover', 'Community']
 
   return (
     <motion.header

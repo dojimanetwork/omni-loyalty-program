@@ -40,7 +40,7 @@ const Footer = ({ customClass }) => {
       <div className={stl.main}>
         <div className={stl.upperSection}>
           <motion.div {...motionProps}>
-            {isDark ? <DarkLogo /> : <LightLogo />}
+            {isDark ?  <h1 style={{color: 'white',}}>Omnichain Loyalty</h1>:   <h1 style={{color: 'black',}}>Omnichain Loyalty</h1>}
           </motion.div>
           <motion.div
             {...motionProps}
@@ -86,10 +86,7 @@ const Footer = ({ customClass }) => {
       <div className={stl.buttons}>
         <motion.div {...motionProps} className={stl.upperSection}>
           <Para size="small">
-            Want to stay up-to-date on the latest in the world of NFTs? Sign up
-            for our newsletter! You&apos;ll receive regular updates on new
-            releases, featured artists, and exciting developments in the NFT
-            space. Don&apos;t miss out - join our community today!
+          Want to make the most of your loyalty points and stay updated on exciting rewards? Sign up for our newsletter! Get regular updates on new brand partnerships, exclusive offers, and the latest developments in our Unified Loyalty Platform. Don’t miss out – join our community today!
           </Para>
         </motion.div>
 
