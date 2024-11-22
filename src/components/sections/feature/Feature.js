@@ -23,7 +23,7 @@ const Feature = ({
       <br /> Blockchain Integration
     </>
   ),
-  description = 'This solution uses blockchain to enable seamless, interoperable loyalty points transactions across multiple brands, allowing consumers to accumulate, exchange, and redeem points in a unified digital wallet for greater flexibility and value.',
+  description = 'This solution uses blockchain to enable seamless, interoperable loyalty points transactions across multiple brands allowing consumers to accumulate, exchange and redeem points in a unified digital wallet for greater flexibility and value.',
   src = '/assets/png/effortless.png',
   showKeyPoints,
   swap,

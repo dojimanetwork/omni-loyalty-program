@@ -57,7 +57,7 @@ const Home = () => {
             <br /> Points System
           </>
         }
-        description="This interoperable loyalty points system boosts consumer satisfaction by enabling seamless point exchanges, secure transactions, and flexible reward options across multiple brands, increasing engagement and retention."
+        description="This interoperable loyalty points system boosts consumer satisfaction by enabling seamless point exchanges, secure transactions and flexible reward options across multiple brands, increasing engagement and retention."
         src="/assets/png/market-nft.png"
         showKeyPoints
         swap
