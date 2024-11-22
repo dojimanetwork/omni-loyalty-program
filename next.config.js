@@ -3,8 +3,8 @@
 const path = require("path");
 
 module.exports = {
-  basePath: "/omni-loyalty-program",
-  assetPrefix: "/omni-loyalty-program",
+  basePath: "/",
+  assetPrefix: "/",
   reactStrictMode: true,
   images: { unoptimized: true },
   webpack: (config) => {
