@@ -14,6 +14,7 @@ import rightImg from "../../../../../omni-loyalty-program/public/assets/png/effo
 
 import { getCommonMotionProps } from 'lib/utils'
 
+
 import stl from './Feature.module.scss'
 
 const Feature = ({
