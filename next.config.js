@@ -3,8 +3,6 @@
 const path = require("path");
 
 module.exports = {
-  basePath: "/",
-  assetPrefix: "/",
   reactStrictMode: true,
   images: { unoptimized: true },
   webpack: (config) => {
