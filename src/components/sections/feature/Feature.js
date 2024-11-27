@@ -6,11 +6,7 @@ import clsx from 'clsx'
 import { motion } from 'framer-motion'
 
 import Para from 'components/para'
-import Button from 'components/button'
 
-import ExposureIcon from 'assets/svg/exposure.svg'
-import BrandIcon from 'assets/svg/brand.svg'
-import rightImg from "../../../../../omni-loyalty-program/public/assets/png/effortless.png"
 
 import { getCommonMotionProps } from 'lib/utils'
 
@@ -26,7 +22,7 @@ const Feature = ({
     </>
   ),
   description = 'This solution uses blockchain to enable seamless, interoperable loyalty points transactions across multiple brands allowing consumers to accumulate, exchange and redeem points in a unified digital wallet for greater flexibility and value.',
-  src = rightImg,
+  src ='/assets/png/effortless.png',
   showKeyPoints,
   swap,
   customClass,

@@ -11,12 +11,12 @@ import GetStarted from "components/sections/get-started";
 import Countbox from "components/countbox";
 import CTA from "components/cta";
 import EthRow from "components/eth-row";
-import srcImg from "../../../../omni-loyalty-program/public/assets/png/market-nft.png"
+
 
 import stl from "./Home.module.scss";
 
 const Home = () => {
-  const src=srcImg
+
   const { isDark } = useSelector((state) => state.appearance);
 
   return (
@@ -59,7 +59,7 @@ const Home = () => {
           </>
         }
         description="This interoperable loyalty points system boosts consumer satisfaction by enabling seamless point exchanges, secure transactions and flexible reward options across multiple brands, increasing engagement and retention."
-        src={src}
+         src="/assets/png/market-nft.png"
         showKeyPoints
         swap
       />

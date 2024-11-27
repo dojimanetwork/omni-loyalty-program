@@ -5,13 +5,12 @@ import { motion } from 'framer-motion'
 
 import SearchBar from 'components/search-bar'
 
-import MiniLogo from '../../../../../omni-loyalty-program/src/assets/svg/mini-logo.svg'
-import GreenHalfIcon from '../../../../../omni-loyalty-program/src/assets/svg/green-half.svg'
-import RitterSportLogo from '../../../../../omni-loyalty-program/src/assets/svg/ritter-sport.svg'
-import NikeLogo from '../../../../../omni-loyalty-program/src/assets/svg/nike.svg'
-import AdidasLogo from '../../../../../omni-loyalty-program/src/assets/svg/adidas.svg'
-import NewHollandLogo from '../../../../../omni-loyalty-program/src/assets/svg/new-holland.svg'
-
+import MiniLogo from 'assets/svg/mini-logo.svg'
+import GreenHalfIcon from 'assets/svg/green-half.svg'
+import RitterSportLogo from 'assets/svg/ritter-sport.svg'
+import NikeLogo from 'assets/svg/nike.svg'
+import AdidasLogo from 'assets/svg/adidas.svg'
+import NewHollandLogo from 'assets/svg/new-holland.svg'
 import { getCommonMotionProps } from 'lib/utils'
 
 import stl from './Intro.module.scss'
