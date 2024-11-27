@@ -12,7 +12,7 @@ import stl from "./CTA.module.scss";
 const CTA = ({ customClass }) => {
   const { isDark } = useSelector((state) => state.appearance);
   const [animation, setAnimation] = useState(false);
-  const src = isDark ? srcDrkImg : srcImg;
+  
 
   const motionProps = getCommonMotionProps(animation, setAnimation);
 
