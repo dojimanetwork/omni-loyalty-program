@@ -10,7 +10,7 @@ import stl from "./EthRow.module.scss";
 
 
 const EthRow = () => {
-  const src=srcImg
+
   const [animation, setAnimation] = useState(false);
 
   const motionProps = getCommonMotionProps(animation, setAnimation);
