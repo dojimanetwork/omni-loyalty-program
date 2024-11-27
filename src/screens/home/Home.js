@@ -47,6 +47,7 @@ const Home = () => {
       </Head>
       <Header />
       <Intro />
+      <EthRow />
       {/* <Slider type="large" /> */}
       <Feature />
       {/* <GetStarted /> */}
@@ -105,7 +106,7 @@ const Home = () => {
           );
         })}
       </div> */}
-      <EthRow />
+
       <Footer />
     </div>
   );

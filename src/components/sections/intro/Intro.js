@@ -46,10 +46,10 @@ const Intro = () => {
         transition={{ duration: 0.5, delay: 0.35 }}
         className={stl.companiesLogos}
       >
-        <RitterSportLogo />
+        {/* <RitterSportLogo />
         <NikeLogo />
         <AdidasLogo />
-        <NewHollandLogo />
+        <NewHollandLogo /> */}
       </motion.div>
       {/* <motion.div
         {...motionProps}
